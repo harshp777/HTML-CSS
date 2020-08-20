@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    
+    
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <h1>Basic Calculator</h1>
+    <br/>
+   <form id="myform" name="calc">
+      <table>
+          <tr>
+              <td>
+                  <input  name="input1"  style="width:675px;height:100px; text-align:center ;background-color:#1f80c9;">
+  
+                  <br>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  <input type=button value="  1  " onclick="calc.input1.value += '1'">
+                  <input type="button" value="  2  " onclick="calc.input1.value += '2'">
+                  <input type="button"  value="  3  " onclick="calc.input1.value += '3'">
+                  <input type="button"  value="  +  " style="background-color:orange"onclick="calc.input1.value += ' + '">
+                  <br>
+                  <input type="button"  value="  4  " onclick="calc.input1.value += '4'">
+                  <input type="button"  value="  5  " onclick="calc.input1.value += '5'">
+                  <input type="button"  value="  6  " onclick="calc.input1.value += '6'">
+                  <input type="button"  value="  -  " style="background-color:palevioletred;"onclick="calc.input1.value += ' - '">
+                  <br>
+                  <input type="button" value="  7  " onclick="calc.input1.value += '7'">
+                  <input type="button"  value="  8  " onclick="calc.input1.value += '8'">
+                  <input type="button" value="  9  " onclick="calc.input1.value += '9'">
+                  <input type="button"  value="  x  " style="background-color:grey;"onclick="calc.input1.value += ' * '">
+                  <br>
+                  <input type="button"  value="  C  " style="background-color:#cc0000;" onclick="calc.input1.value = ''">
+                  <input type="button"  value="  0  " onclick="calc.input1.value += '0'">
+                  <input type="button"  value="  =  " onclick="calc.input1.value = eval(calc.input1.value)">
+                  <input type="button"  value="  /  " style="background-color:green"onclick="calc.input1.value += ' / '">
+                  <br>
+              </td>
+          </tr>
+      </table>
+  </form>
+  
+</body>
+
+</html>
