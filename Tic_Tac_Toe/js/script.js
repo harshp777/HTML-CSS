@@ -31,7 +31,7 @@ function nextMove(Square)
         switchTurn();
     }
     else{
-        setMessage("That square is already used ")
+        setMessage("That Cell is already used ")
     }
     
 }
